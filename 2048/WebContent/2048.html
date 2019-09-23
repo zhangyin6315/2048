@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="2048.css">
+    <style>
+        a{
+            text-decoration:none;
+            color:#fafaee;
+        }
+
+    </style>
+<script>
+    function Running(){
+        window.location.href="";
+        document.getElementById("gameOver").style.display="none";
+    }
+</script>
+</head>
+<body>
+
+<div style="text-align: center; display: inline-block;margin-left: 100px;">
+    <div style="font-size: 50px;font-weight: bold;width: 200px;float: left;">2048</div>
+    <div style=" width: 90px;height: 60px; background-color: #bbada0;color: #fafaee;float: right ;margin-left: 10px;margin-top: 10px;"><h3>best</h3><div id="best">0</div></div>
+    <div style=" width: 90px;height: 60px; background-color: #bbada0; color: #fafaee;float: right;margin-top: 10px;"><h3>score</h3> <div id="score">0</div></div>
+    <div style="width:100px;background-color: #bbada0;color: #fafaee;padding: 5px;height: 40px;margin-bottom: 20px;margin-top: 80px;margin-left: 300px;"><h2><a href="">开始游戏</a></h2></div>
+</div>
+
+
+
+<div id="gridPlea">
+    <div id="grid_00" class="grid" ></div>
+    <div id="grid_01" class="grid" ></div>
+    <div id="grid_02" class="grid" ></div>
+    <div id="grid_03" class="grid" ></div>
+
+    <div id="grid_10" class="grid" ></div>
+    <div id="grid_11" class="grid" ></div>
+    <div id="grid_12" class="grid" ></div>
+    <div id="grid_13" class="grid" ></div>
+
+    <div id="grid_20" class="grid" ></div>
+    <div id="grid_21" class="grid" ></div>
+    <div id="grid_22" class="grid" ></div>
+    <div id="grid_23" class="grid" ></div>
+
+    <div id="grid_30" class="grid" ></div>
+    <div id="grid_31" class="grid" ></div>
+    <div id="grid_32" class="grid" ></div>
+    <div id="grid_33" class="grid" ></div>
+
+    <div id="cell_00" class="cell" ></div>
+    <div id="cell_01" class="cell" ></div>
+    <div id="cell_02" class="cell" ></div>
+    <div id="cell_03" class="cell" ></div>
+
+    <div id="cell_10" class="cell"></div>
+    <div id="cell_11" class="cell" ></div>
+    <div id="cell_12" class="cell" ></div>
+    <div id="cell_13" class="cell" ></div>
+
+    <div id="cell_20" class="cell" ></div>
+    <div id="cell_21" class="cell" ></div>
+    <div id="cell_22" class="cell" ></div>
+    <div id="cell_23" class="cell" ></div>
+
+    <div id="cell_30" class="cell" ></div>
+    <div id="cell_31" class="cell" ></div>
+    <div id="cell_32" class="cell" ></div>
+    <div id="cell_33" class="cell" ></div>
+
+</div>
+<div id="gameOver">
+<div style="margin-left:30px;font-size: 50px;text-align: center;margin-top: 200px; margin-bottom:40px;color: #776e65">GAME OVER !</div>
+<div class="gameOverInput" style=" margin-left: 100px;"><a href="javascript:;" onclick="Running()"style="color: #e9e4de">重新开始</a></div>
+    <div class="gameOverInput" style="float: right;margin-right: 100px;"><a style="color: #e9e4de">成绩</a></div>
+</div>
+
+<script src="2048.js">
+
+</script>
+
+</body>
+</html>
